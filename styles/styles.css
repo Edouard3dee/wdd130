@@ -30,7 +30,7 @@ main img{
     height: auto;
     padding: 0px;
     border: 0;
-    box-shadow: 1rem;
+    box-shadow:  0 0 30px;
 
 }
 aside{
