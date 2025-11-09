@@ -19,7 +19,7 @@ img{
     box-shadow: 0 0 30 px gray;
 }
 p{
-    padding: 10px;
+    padding: 0px;
 }
 main{
     max-width: 840px;
@@ -45,9 +45,6 @@ aside{
 aside img{
     width: 200px;
     height: auto;
-}
-p{
-    padding: 0;
 }
 footer{
        margin-top: 15px;
