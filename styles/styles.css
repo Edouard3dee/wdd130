@@ -28,9 +28,9 @@ main{
 main img{
     width: 150px;
     height: auto;
-    padding: auto;
+    padding: 0px;
     border: 0;
-    box-shadow: 10px #727171;
+    box-shadow: 10px #000;
 
 }
 aside{
