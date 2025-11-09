@@ -27,7 +27,10 @@ main{
 
 main img{
     width: 150px;
+    height: auto;
     padding: auto;
+    border: 0;
+    box-shadow: 10px #727171;
 
 }
 aside{
@@ -41,11 +44,13 @@ aside{
 }
 aside img{
     width: 200px;
-    padding: auto;
+    height: auto;
 }
-p{padding: 0px;}
+p{
+    padding: 0;
+}
 footer{
        margin-top: 15px;
-       border: 1px solid #000;
+       border-top: 1px solid #000;
        text-align: center;
 }
