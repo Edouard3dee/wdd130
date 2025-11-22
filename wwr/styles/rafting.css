@@ -1,5 +1,5 @@
 :root{
-  --primary-color: #819181; 
+  --primary-color: #aab9aa; 
   --secondary-color: #f4a261; 
   --accent1-color: #264653; 
   --accent2-color: #e9c46a; 
@@ -44,13 +44,17 @@ nav, p, section, article {
 .hero {
   position: relative;
 }
-
+.hero h1{
+    position: absolute;
+}
 .hero img {
     display: block;
     width: 100%;
     height: auto;
   }
-
+h1 img{
+    width: auto;
+}
 h1 {
   position: absolute;
   top: 20px;
