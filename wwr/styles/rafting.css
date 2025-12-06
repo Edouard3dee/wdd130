@@ -186,12 +186,10 @@ button {
     font-size: 1.1em;
     font-weight: bold;
     display: block;
-    transition: background-color 0.3s;
-}
+    transition: background-color 0.3s;}
 button:hover {
     background-color: var(--button-color); 
 }
-
 
 section.box {
     background-color: var(--light-bg);
