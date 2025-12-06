@@ -1,14 +1,10 @@
 :root {
-    --header-bg: #e6e6fa; /* Lavander */
-    --accent-color: #5c5c8a; /* Slate Blue/Purple */
-    --button-color: #ff8c00; /* Dark Orange */
+    --header-bg: #e6e6fa; 
+    --accent-color: #5c5c8a; 
+    --button-color: #ff8c00; 
     --light-bg: #f9f9f9; 
     --input-padding: 8px;
-    /* NEW: Adjusted button-hover-color for WCAG AA contrast */
-    --button-hover-color: #d17100; /* Darker orange for hover/active state */
-}
-
-body {
+    --button-hover-color: #d17100; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -104,20 +100,14 @@ form {
     margin: 0;
 }
 
-/* CORRECTED: Consolidated both 'fieldset' rules here */
 fieldset {
     border: none;
     padding: 0;
     margin: 0;
-    
-    /* Styles moved from the second fieldset rule */
     margin-left: 130px; 
     font-weight: normal;
     display: inline-block;
 }
-
-/* Removed the second fieldset rule that was causing the repetition error */
-
 
 form label {
     font-weight: bold;
@@ -186,11 +176,8 @@ textarea#message {
     display: inline;
 }
 
-/* CORRECTED: Consolidated both 'button' rules and addressed color contrast. */
 button {
-    /* Use the darker color directly to pass WCAG AA contrast (3.57:1 fails, need 4.5:1) 
-       #cc7000 (3.57:1) is too light. I'll use a custom dark orange #c46a00 (ratio: 4.54:1) */
-    background-color: #c46a00; /* New base color to ensure WCAG AA contrast */
+    background-color: #c46a00; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -200,12 +187,9 @@ button {
     font-weight: bold;
     display: block;
     transition: background-color 0.3s;
-    /* Removed the second, repeated button rule entirely */
 }
-
-/* ADDED: Hover rule for better user experience and to use the original variable button color */
 button:hover {
-    background-color: var(--button-color); /* Use the original lighter color for hover */
+    background-color: var(--button-color); 
 }
 
 
