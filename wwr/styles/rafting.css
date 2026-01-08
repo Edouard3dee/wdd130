@@ -104,8 +104,6 @@ fieldset {
     border: none;
     padding: 0;
     margin: 0;
-    margin-left: 130px; 
-    font-weight: normal;
     display: inline-block;
 }
 
@@ -116,8 +114,6 @@ form label {
 
 label[for="name"],
 label[for="email"] {
-    display: inline-block;
-    width: 120px; 
     text-align: right;
     margin-top: 10px;
 }
@@ -130,7 +126,7 @@ input[type="email"] {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    display: inline-block;
+
 }
 
 
@@ -265,4 +261,4 @@ footer p {
 
 .socialmedia img {
     width: 30px;
-    height: 30px;
+    height: 30px;}
