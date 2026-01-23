@@ -16,7 +16,7 @@ h1 {
 }
       
 .herodiv {
-  margin: 10px auto; /* If removed, what happens? */
+  margin: 10px auto;
 }
       
 .herodiv img {
@@ -34,8 +34,8 @@ h1 {
   padding: 0.65rem;
   box-shadow: 0 0 30px #111;
   opacity: 0.9;
-  bottom: 25px ;
-  left: 15;
+  bottom: 25px;
+  left: 15px;
 }
       
 h2 {
