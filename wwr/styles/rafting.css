@@ -1,5 +1,5 @@
 :root{
-  --primary-color: #a3cbf091; 
+  --primary-color: #ec763191; 
   --secondary-color: #499fb9; 
   --accent1-color: #264653; 
   --accent2-color: #0d1214; 
@@ -30,7 +30,7 @@ main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: rgb(62, 59, 194);
+  color: var(--primary-color);
 }
 
 nav, p, section, article {
