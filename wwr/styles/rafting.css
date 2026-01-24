@@ -2,7 +2,7 @@
   --primary-color: #a3cbf091; 
   --secondary-color: #499fb9; 
   --accent1-color: #264653; 
-  --accent2-color: #6291a3; 
+  --accent2-color: #0d1214; 
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color:beige;
+  background-color:rgb(241, 241, 239);
   color: var(--accent2-color);
 }
 
@@ -77,9 +77,9 @@ h1 {
  .hero article {
   position: absolute;
   top: 50%;
-  background-color: #75a1af;
+  background-color: #d5e2e6;
   opacity: 0.9;
-  color: rgb(242, 242, 248);
+  color: rgb(55, 55, 173);
   width: 95%;
   bottom: 2%;
   flex-direction: row-reverse;
@@ -105,5 +105,5 @@ nav{
 h2{
   background-color: var(--secondary-color);
   text-align: center;
-  color: white;
+  color: rgb(138, 69, 69);
 }
