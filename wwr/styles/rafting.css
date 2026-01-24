@@ -1,264 +1,109 @@
-:root {
-    --header-bg: #e6e6fa; 
-    --accent-color: #5c5c8a; 
-    --button-color: #ff8c00; 
-    --light-bg: #f9f9f9; 
-    --input-padding: 8px;
-    --button-hover-color: #d17100; 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
+:root{
+  --primary-color: #a3cbf091; 
+  --secondary-color: #499fb9; 
+  --accent1-color: #264653; 
+  --accent2-color: #6291a3; 
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
 
 header {
-    background-color: var(--header-bg);
-    display: grid;
-    grid-template-columns: 100px auto; 
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 2px solid var(--accent-color);
+  background-color:beige;
+  color: var(--accent2-color);
 }
 
-header img {
-    width: 80px;
-    height: 80px;
-    background-color: #d8bfd8;
-    border: 1px solid var(--accent-color);
-    object-fit: contain;
+main, footer {
+  width: 100%;
+  margin: 0 auto;
 }
 
-header nav.contact {
-    justify-self: end;
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-header nav.contact a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: var(--accent-color);
-    font-weight: bold;
-    border: 1px solid var(--accent-color);
-    margin-left: 5px;
-    border-radius: 0;
-    display: inline-block;
-    text-align: center;
-    width: 80px;
-}
-
-header nav.contact a:hover {
-    background-color: var(--accent-color);
-    color: white;
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-main > h1 {
-    text-align: center;
-    font-size: 2.2em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-main > p {
-    text-align: center;
-    margin: 5px 0;
-    font-size: 1.1em;
-}
-
-.map-form-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 40px;
-    margin-top: 30px;
-    align-items: start;
-}
-
-.map {
-    background: var(--light-bg);
-    padding: 0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    height: 400px; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-form {
-    padding: 0;
-    margin: 0;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-}
-
-form label {
-    font-weight: bold;
-    padding-right: 10px;
-}
-
-label[for="name"],
-label[for="email"] {
-    text-align: right;
-    margin-top: 10px;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: calc(100% - 130px); 
-    padding: var(--input-padding);
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-
-}
-
-
-form fieldset > label:nth-child(5) { 
-    display: block; 
-    width: auto;
-    text-align: left;
-    margin-left: 0;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.radio-group-wrapper {
-    margin-left: 130px; 
-    margin-top: -15px; 
-}
-
-
-label[for="message"] {
-    display: block;
-    width: auto;
-    text-align: left;
-    margin-top: 20px;
-}
-
-textarea#message {
-    width: 100%;
-    padding: var(--input-padding);
-    margin-top: 5px;
-    box-sizing: border-box;
-    resize: vertical;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.checkbox-group {
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.checkbox-group label {
-    font-weight: normal;
-    display: inline;
-}
-
-button {
-    background-color: #c46a00; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: bold;
-    display: block;
-    transition: background-color 0.3s;}
-button:hover {
-    background-color: var(--button-color); 
-}
-
-section.box {
-    background-color: var(--light-bg);
-    padding: 20px 0;
-    margin-top: 30px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-section.box h1 {
-    font-size: 1.5em;
-    margin: 0;
-    color: var(--accent-color);
-}
-
-section.employees {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.employees figure {
-    
-    flex-basis: 30%;
-    margin: 0;
-}
-
-.employees img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    background-color: var(--light-bg);
-    border-radius: 50%; 
-    border: 3px solid #ccc;
-    margin-bottom: 5px;
-}
-
-.employees figcaption {
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--accent-color);
-    margin-top: 10px;
-}
-
-
-footer {
-    background-color: var(--header-bg);
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid var(--accent-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-footer p {
-    margin: 0;
-    color: var(--accent-color);
-    flex-grow: 1;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.socialmedia {
-    margin-right: 20px;
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
 .socialmedia a {
-    margin-left: 15px;
+  text-decoration: none;
 }
 
-.socialmedia img {
-    width: 30px;
-    height: 30px;}
+.hero {
+  position: relative;
+}
+
+.hero h1{
+  position: absolute;
+}
+
+.hero article img {
+  float: right;
+  width: 80px;
+  border: 1px solid var(--accent1-color);
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 1px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #e4dede;
+}
+
+ .hero article {
+  position: absolute;
+  top: 50%;
+  background-color: #75a1af;
+  opacity: 0.9;
+  color: rgb(242, 242, 248);
+  width: 95%;
+  bottom: 2%;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+p{
+  position: relative; 
+  
+}
+nav{
+  display: grid;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 10px;
+}
+.footer-text {
+  text-align: left;
+  padding: 1px;
+}
+h2{
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: white;
+}
