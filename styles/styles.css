@@ -71,3 +71,7 @@ footer{
 .bad{
     padding:2rem;;
 }
+header, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
