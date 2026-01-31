@@ -22,11 +22,19 @@ main{
 nav{
     background-color: var(--darkblue);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 nav a {
+    text-decoration: none;
     color: white;
     display: block;
     padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+
 
 }
 h1 {
@@ -71,7 +79,22 @@ footer{
 .bad{
     padding:2rem;;
 }
-header, footer {
+header, .grid, footer {
   max-width: 840px;
   margin: 0 auto;
+}
+.grid {
+  display: grid;
+  align-items: center;
+}
+   
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+aside{
+    position: relative;
+    grid-column: 1/2;
+    width: 20rem;
+    grid-row: 1/2;
 }
