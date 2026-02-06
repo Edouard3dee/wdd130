@@ -135,16 +135,17 @@ p{
 nav{
   display: grid;
 }
-
-.socialmedia {
+footer{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+}
+.socialmedia{
+  display: flex;
   gap: 10px;
 }
-.footer-text {
-  text-align: center;
-  padding: 1px;
-}
+
 h2{
   background-color: var(--secondary-color);
   text-align: center;
