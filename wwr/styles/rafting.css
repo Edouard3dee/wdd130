@@ -183,7 +183,7 @@ fieldset {
 }
 .map {
     padding: 0;
-    border: 1px solid var (--accent1-color);
+    border: 1px solid var(--accent1-color);
     box-sizing: border-box;
     height: 300px; 
     display: flex; 
