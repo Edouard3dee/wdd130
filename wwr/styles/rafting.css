@@ -219,9 +219,8 @@ textarea#message {
     border-radius: 4px;
 }
 .employees {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
 }
 .serve{
@@ -231,10 +230,8 @@ textarea#message {
   background-color: var(--secondary-color);
   text-align: center;
   color:var(--accent2-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100% ;
+  grid-column: 1 / span 3;
   }
   .serve-title h2 {
     margin: 0;
