@@ -105,7 +105,7 @@ nav, p, section, article {
 }
 
 
-h1 {
+/*h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -126,7 +126,7 @@ h1 {
   bottom: 2%;
   flex-direction: row-reverse;
   align-items: center;
-}
+}*/
 
 p{
   position: relative; 
@@ -162,4 +162,73 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
+
+.contact-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.contact-info p {
+  font-weight: bold;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.map {
+    padding: 0;
+    border: 1px solid var (--accent1-color);
+    box-sizing: border-box;
+    height: 300px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+form fieldset > label:nth-child(5) { 
+    display: block; 
+    width: auto;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.checkbox-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+textarea#message {
+    width: 100%;
+    padding: var(--input-padding);
+    margin-top: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    border-radius: 4px;
+}
+.employees {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+.serve{
+  border: 1px solid var(--accent1-color); 
+}
+.serve-title{
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: rgb(14, 13, 13);
+  padding: 10px;}
