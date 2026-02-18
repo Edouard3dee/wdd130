@@ -105,7 +105,7 @@ nav, p, section, article {
 }
 
 
-/*h1 {
+.company {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -126,7 +126,7 @@ nav, p, section, article {
   bottom: 2%;
   flex-direction: row-reverse;
   align-items: center;
-}*/
+}
 
 p{
   position: relative; 
@@ -241,4 +241,61 @@ button {
     font-weight: bold;
     display: block;
     transition: background-color 0.3s;
+}
+.adventure {
+  text-align: center;
+}
+.newsletter {
+  background-color: var(--accent1-color);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.newsletter-form {
+  max-width: 400px;
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.cta-button {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid var(--accent2-color);
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: rgb(35, 224, 28);
+}
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.offering-card {
+  border: 1px solid var(--accent1-color);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(243, 243, 236);
+}
+
+.offering-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--secondary-color);
+  margin-bottom: 10px;
 }
